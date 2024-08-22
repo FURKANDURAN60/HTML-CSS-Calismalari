@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+    <head>
+        <title> Baslik</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Formlarda Metin Alanları</h1>
+        <form name = "kayit" action="asd.php" autocomplete="on">
+            <table border="1">
+                <caption>Kullanıcı Veri Girişi</caption>
+                <thead> <tr><th colspan="2">Kullanıcı Veri Alma Tablosu</th></tr></thead>
+                
+                <tbody>
+                    <tr><th>AD : </th><td><input type="text" name="ad" required autofocus placeholder="İsim Giriniz"></td></tr>
+                    <tr><th>SOYAD:</th><td><input type="text" name="soyad" required placeholder="Soyisim Giriniz"></td></tr>
+                    <tr><th>E-MAIL:</th><td><input type="email" name="email" required placeholder="E-mail Giriniz"></td></tr>
+                    <tr><th>YAS:</th><td><input type="number" name="yas" required placeholder="Yaş Giriniz"></td></tr>
+                    <tr><th>WEB:</th><td><input type="url" name="web" required placeholder="Web Giriniz"></td></tr>            
+                </tbody>
+            </table>
+
+            <input type="checkbox" name="ogrenci"> Öğrenciyim.
+            <br>
+            <input type="checkbox" name="fakulte"> Bilgisayar Mühendisliği Öğrencisiyim.
+            <br>
+                <table border="1">
+                    <thead><tr><th>Takım Sorgusu</th></tr></thead>
+                    <tbody>
+                        <tr><th>Hangi Takimlısınız</th></tr>
+                        <tr><td><input type="radio" name="takim" value="gs">Galatasaray</td></tr>
+                        <tr><td><input type="radio" name="takim" value="fb">Fenerbahçe</td></tr>
+                        <tr><td><input type="radio" name="takim" value="bjk">Beşiktaş</td></tr>
+                        <tr><td><input type="radio" name="takim" value="ts">Tranbzonspor</td></tr>
+                    </tbody>
+                    <tfoot><tr><td><input type="submit" value="Kaydet"> <input type="reset" value="Seçimi Temizle"></td></tr></tfoot>
+                </table>
+            Öneri ve Şikayetleriniz İçin : 
+            <br>
+            <textarea name="oneri_sikayet" id="oneri_sikayet" cols="15" rows="5"></textarea>
+            <br>
+            <input type="submit" value="Gönder"> <input type="reset" name="Sıfırla">
+            <br>
+        </form>
+    </body>
+</html>

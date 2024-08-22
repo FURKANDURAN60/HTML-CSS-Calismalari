@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+    <head>
+        <title>başlık</title>
+        <meta charset="utf-8">
+
+        <style>
+            #mor{
+                background-color: blueviolet;
+                color: white;
+            }
+            #pembe{
+                background-color: pink;
+                color: darkblue;
+            }
+        </style>
+        
+    </head>
+    <body>
+
+        <table >
+            <caption>Kullanıcı Veri Girişi</caption>
+            <thead> <tr><th colspan="2">Kullanıcı Veri Alma Tablosu</th></tr></thead>
+            
+            <tbody>
+                <tr><th id="mor">AD : </th><td><input id="mor" type="text" name="ad" required autofocus placeholder="İsim Giriniz"></td></tr>
+                <tr><th id="pembe">SOYAD:</th><td><input id="pembe" type="text" name="soyad" required placeholder="Soyisim Giriniz"></td></tr>
+                <tr><th id="mor">E-MAIL:</th><td><input id="mor" type="email" name="email" required placeholder="E-mail Giriniz"></td></tr>
+                <tr><th id="pembe">YAS:</th><td><input id="pembe" type="number" name="yas" required placeholder="Yaş Giriniz"></td></tr>
+                <tr><th id="mor">WEB:</th><td><input id="mor" type="url" name="web" required placeholder="Web Giriniz"></td></tr>            
+            </tbody>
+        </table>
+        
+    </body>
+</html>

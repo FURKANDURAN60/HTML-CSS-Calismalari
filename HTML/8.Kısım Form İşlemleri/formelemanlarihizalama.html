@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>baslık</title>
+        <meta charset="utf-8">
+        <style>
+            th.a{
+                background-color: blueviolet;
+                color: aliceblue;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            th.b{
+                background-color: pink;
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Form Elemanlarının Hizalanması</h1>
+        
+        <form name="email" action="mail.php" method="get" autocomplete="on">
+            <table >
+                <tr><th class="a">AD:</th><td><input type="text" name="ad" required  autofocus placeholder="isim giriniz"></td></tr>
+                <tr><th class="b">SOYAD:</th><td><input type="text" name="soyad" required autofocus placeholder="soyad giriniz"></td></tr>
+                <tr><th class="a">E-MAIL:</th><td><input type="email" name="email" required autofocus placeholder="e-mail giriniz"></td></tr>
+                <tr><th class="b">YAS:</th><td><input type="number" name="yas" requiredautofocus placeholder="yas giriniz"></td></tr>
+                <tr><th class="a">WEB:</th><td><input type="url" name="web" required autofocus placeholder="web(varsa) giriniz"></td></tr>
+                <tr><td></td><th><input type="submit" value="KAYDET"> <input type="reset" value="SIFIRLA"></th></tr>
+            </table>
+            
+        </form>
+
+    </body>
+
+
+</html>

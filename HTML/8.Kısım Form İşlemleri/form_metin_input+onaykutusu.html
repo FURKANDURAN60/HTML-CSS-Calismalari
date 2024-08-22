@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>baslık</title> 
+        <meta charset="utf-8">
+        <style>
+            th.a{
+                background-color: blueviolet;
+                color: aliceblue;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: medium;
+            }
+            th.b{
+                background-color:  palevioletred;
+                color: brown;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: medium;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Formlarda Metin Alani</h1>
+        <form name="kayit" action="kayit.php" autocomplete="on">
+            <table >
+                <caption>Kullanıcı Veri Giriş Sayfası</caption>
+                <thead> <tr><th colspan="2">Kullanıcı Veri Alma Tablosu</th></tr></thead>
+                <tbody>
+                <tr><th class="a">AD:</th><td><input type="text" name="ad" required  autofocus placeholder="İsim Giriniz"></td></tr>
+                <tr><th class="b">SOYAD:</th><td><input type="text" name="soyad" required placeholder="Soyisim Giriniz"></td></tr>
+                <tr><th class="a">E-MAIL:</th><td><input type="email" name="email" required placeholder="E-mail Giriniz"></td></tr>
+                <tr><th class="b">YAS:</th><td><input type="number" name="yas" required placeholder="Yaş Giriniz"></td></tr>
+                <tr><th class="a">WEB:</th><td><input type="url" name="web" required placeholder="Web Giriniz"></td></tr>    
+                </tbody>
+            </table>
+                
+                <input type="checkbox" name="ogrenci"> Öğrenciyim. 
+                <br>
+                <input type="checkbox" name="fakulte"> Bilgisayar Mühendisliği Bölümündeyim.
+                <br>
+                Öneri ve Şikayetleriniz İçin :
+                <br> 
+                <textarea name="oneri_sikayet" rows="4" cols="15"></textarea>
+                <br>
+                <input type="submit" value="KAYDET"><input type="reset" value="SIFIRLA">
+
+        </form>
+    </body>
+</html>
